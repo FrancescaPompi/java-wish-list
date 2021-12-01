@@ -31,10 +31,12 @@ public class Main {
 			System.out.println(it.next());
 		}
 		
-		System.out.print("Inserisci il tuo nome:");
+		System.out.print("Inserisci il tuo nome: ");
 		String nome = scan.nextLine();
-		System.out.print("\nInserisci il tuo indirizzo: ");
+		System.out.println("Il tuo nome è: " + nome);
+		System.out.print("Inserisci il tuo indirizzo: ");
 		String indirizzo = scan.nextLine();
+		System.out.println("Il tuo indirizzo è: " + indirizzo);
 		
 		LetteraBabboNatale lettera = new LetteraBabboNatale(nome, indirizzo, listaDesideri);
 		
