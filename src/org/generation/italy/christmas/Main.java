@@ -32,16 +32,16 @@ public class Main {
 		}
 		
 		System.out.print("Inserisci il tuo nome: ");
-		String nome = scan.nextLine();
-		System.out.println("Il tuo nome è: " + nome);
+		String nomeUtente = scan.nextLine();
+		System.out.println("Il tuo nome è: " + nomeUtente);
 		System.out.print("Inserisci il tuo indirizzo: ");
-		String indirizzo = scan.nextLine();
-		System.out.println("Il tuo indirizzo è: " + indirizzo);
+		String indirizzoUtente = scan.nextLine();
+		System.out.println("Il tuo indirizzo è: " + indirizzoUtente);
 		
-		LetteraBabboNatale lettera = new LetteraBabboNatale(nome, indirizzo, listaDesideri);
+		LetteraBabboNatale lettera = new LetteraBabboNatale(nomeUtente, indirizzoUtente, listaDesideri);
 		
 		try {
-			System.out.println(lettera.invia(nome, indirizzo, listaDesideri));
+			System.out.println(lettera.invia(nomeUtente, indirizzoUtente, listaDesideri));
 		} catch (IllegalArgumentException e) {
 			System.out.println("Impossibile creare la lettera a Babbo Natale:");
 			System.out.println(e.getMessage());

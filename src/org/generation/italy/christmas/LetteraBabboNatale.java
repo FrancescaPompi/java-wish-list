@@ -20,10 +20,7 @@ public class LetteraBabboNatale {
 		if(listaDesideri.size() > 5) {
 			throw new IllegalArgumentException("puoi scegliere solo fino a 5 desideri.");
 		} else {
-			this.nome = nome;
-			this.indirizzo = indirizzo;
-			this.listaDesideri = listaDesideri;
-			return "Info lettera: " + nome + "; " + indirizzo + "; " + listaDesideri;
+			return "Info lettera: " + this.nome + "; " + this.indirizzo + "; " + this.listaDesideri;
 		}
 	}
 	
