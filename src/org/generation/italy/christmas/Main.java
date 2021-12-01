@@ -1,6 +1,8 @@
 package org.generation.italy.christmas;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +22,15 @@ public class Main {
 			System.out.println("La tua lista contiene " + listaDesideri.size() + " desideri");
 			System.out.print("Continuare? (s/n) ");
 			scelta = scan.next();
-		} while(scelta != "s");
+		} while(scelta.equals("s"));
+		
+		Collections.sort(listaDesideri);
+		
+		System.out.println("Ecco la tua lista:");
+		Iterator<String> it = listaDesideri.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
 		
 		
 	}
