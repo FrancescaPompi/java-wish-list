@@ -31,6 +31,20 @@ public class Main {
 			System.out.println(it.next());
 		}
 		
+		System.out.print("Inserisci il tuo nome:");
+		String nome = scan.nextLine();
+		System.out.print("\nInserisci il tuo indirizzo: ");
+		String indirizzo = scan.nextLine();
+		
+		LetteraBabboNatale lettera = new LetteraBabboNatale(nome, indirizzo, listaDesideri);
+		
+		try {
+			System.out.println(lettera.invia(nome, indirizzo, listaDesideri));
+		} catch (IllegalArgumentException e) {
+			System.out.println("Impossibile creare la lettera a Babbo Natale:");
+			System.out.println(e.getMessage());
+		}
+		
 		scan.close();
 
 	}

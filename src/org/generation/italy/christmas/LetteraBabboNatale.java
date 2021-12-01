@@ -18,7 +18,7 @@ public class LetteraBabboNatale {
 	// metodo
 	public String invia(String nome, String indirizzo, List<String> listaDesideri) {
 		if(listaDesideri.size() > 5) {
-			throw new IllegalArgumentException("Puoi scegliere solo fino a 5 desideri.");
+			throw new IllegalArgumentException("puoi scegliere solo fino a 5 desideri.");
 		} else {
 			this.nome = nome;
 			this.indirizzo = indirizzo;
